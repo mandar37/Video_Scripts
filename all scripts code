@@ -1,0 +1,19 @@
+ogv TO .avi
+
+mencoder input.ogv -ovc xvid -oac mp3lame -xvidencopts pass=1 -o output.avi
+
+.flv TO .avi
+
+mencoder input.flv -o output.avi -oac mp3lame -lameopts cbr:br=64 -srate 22050 -ovc xvid -xvidencopts fixed_quant=6
+
+.mpeg TO .avi
+
+mencoder input.mpg -ovc xvid -oac mp3lame -xvidencopts bitrate=800 -o output.avi
+
+.mp4 TO .avi
+
+mencoder -oac copy -ovc copy input.mp4 -o output.avi
+
+.wmv TO .avi
+
+mencoder input.wmv -ofps 23.976 -ovc lavc -oac copy -o output.avi
