@@ -1,0 +1,1 @@
+mencoder -forceidx -ovc copy -oac copy -o final.avi 1final.avi 2final.avi 3final.avi 4final.avi 5final.avi
